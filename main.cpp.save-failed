@@ -1,0 +1,38 @@
+#include <windows.h>
+
+#include "FractionMenu.h"
+
+using namespace std;
+
+void fullscreeen()
+{
+    /*** works on laptop or medium screens only ***/
+    keybd_event(VK_MENU, 0x38, 0, 0);
+    keybd_event(VK_RETURN, 0x1c, 0, 0);
+    keybd_event(VK_RETURN, 0x1c, KEYEVENTF_KEYUP, 0);
+    keybd_event(VK_MENU, 0x38, KEYEVENTF_KEYUP, 0);
+}
+
+int main()
+{
+    fullscreeen();
+    system("pause");
+
+    FractionMenu menu;
+    int selectedItem;
+    do
+    {
+        system("cls");
+
+        menu.displayItems();
+
+        selectedItem = menu.selectedItem();
+        if(selectedItem == 6)
+            break;
+
+        menu.process(selectedItem);
+        selectedItem = menu.tryAgain() ? 0 : 6;
+    }while(selectedItem != 6);
+
+    FractionMenu::centerText("Thank you for using this application . . .");
+}

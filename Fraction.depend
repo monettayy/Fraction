@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1511589870 source:f:\asop\fraction\main.cpp
+	<windows.h>
+	"FractionMenu.h"
+
+1511590234 f:\asop\fraction\include\fractionmenu.h
+	<string>
+	<iostream>
+	"Fraction.h"
+
+1511589818 f:\asop\fraction\include\fraction.h
+	<string>
+
+1511589842 source:f:\asop\fraction\src\fraction.cpp
+	<iostream>
+	<string>
+	<sstream>
+	"Fraction.h"
+	"FractionMenu.h"
+
+1511589854 source:f:\asop\fraction\src\fractionmenu.cpp
+	<string>
+	<sstream>
+	<iostream>
+	<limits>
+	<conio.h>
+	<windows.h>
+	<stdlib.h>
+	"Fraction.h"
+	"FractionMenu.h"
+
+1511608842 source:f:\asop\activity03\fraction\src\fraction.cpp
+	<iostream>
+	<string>
+	<sstream>
+	"Fraction.h"
+	"FractionMenu.h"
+
+1511608942 f:\asop\activity03\fraction\include\fraction.h
+	<string>
+
+1511608028 f:\asop\activity03\fraction\include\fractionmenu.h
+	<string>
+	<iostream>
+	"Fraction.h"
+
+1511609730 source:f:\asop\activity03\fraction\src\fractionmenu.cpp
+	<string>
+	<sstream>
+	<iostream>
+	<limits>
+	<conio.h>
+	<windows.h>
+	<stdlib.h>
+	"Fraction.h"
+	"FractionMenu.h"
+
+1511608522 source:f:\asop\activity03\fraction\main.cpp
+	<windows.h>
+	"FractionMenu.h"
+
